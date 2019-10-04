@@ -86,20 +86,20 @@
                 <div class="col-md-9">
                     <div class="col-md-6 wow fadeInRight delay-02s" data-toggle="modal" data-target="#myModal1" id="cc1">
                         <div class="icon">
-                            <i class="fa fa-paint-brush"></i>
+                            <i class="fa fa-calculator"></i>
                         </div>
                         <div class="icon-text">
-                            <h3 class="txt-tl">Easy to Learn and Design</h3>
-                            <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                            <h3 class="txt-tl">Arithmetic</h3>
+                            <p class="txt-para">Get to know about five random numbers of your choice</p>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRight delay-02s" data-toggle="modal" data-target="#myModal2" id="cc2">
                         <div class="icon">
-                            <i class="fa fa-cogs"></i>
+                            <i class="fa fa-exclamation"></i>
                         </div>
                         <div class="icon-text">
-                            <h3 class="txt-tl">Bootstrap 3.3.2</h3>
-                            <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                            <h3 class="txt-tl">Factorial</h3>
+                            <p class="txt-para">n! = n * (n - 1) * (n -2) * (n -3) * ... * 3 * 2 *1</p>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRight delay-04s" data-toggle="modal" data-target="#myModal3" id="cc3">
@@ -140,355 +140,341 @@
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     </section>
     <!--Modals-->
-        <div id="myModal1" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+    <div id="myModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title text-center">ARITHMETIC</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="background: #333">
+                    <h2 class="modal-title text-center" style="color: #FFD34E">ARITHMETIC</h2>
+                </div>
+                <div class="modal-body" style="background:#F8F8F8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>This does magic</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="input1" type="text" class="form-control" placeholder="Enter a number" />
+                                </div>
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="input2" type="text" class="form-control" placeholder="Enter a number" />
+                                </div>
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="input3" type="text" class="form-control" placeholder="Enter a number" />
+                                </div>
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="input4" type="text" class="form-control" placeholder="Enter a number" />
+                                </div>
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="input5" type="text" class="form-control" placeholder="Enter a number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row" style="border: 1px solid transparent; padding: 5px 0px 0px 20px"><p id="smallOutput"></p></div>
+                                <div class="row" style="border: 1px solid transparent; padding: 5px 0px 0px 20px"><p id="bigOutput"></p></div>
+                                <div class="row" style="border: 1px solid transparent; padding: 6px 0px 0px 20px"><p id="avgOutput"></p></div>
+                                <div class="row" style="border: 1px solid transparent; padding: 6px 0px 0px 20px"><p id="sumOutput"></p></div>
+                                <div class="row" style="border: 1px solid transparent; padding: 7px 0px 0px 20px"><p id="prodOutput"></p></div>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px solid #e5e5e5; padding-top: 10px">
+                            <div class="col-md-4 text-center">
+                                <button id="doMath" type="submit" class="btn btn-submitc">Do Math</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button type="submit" class="btn btn-submitc">Reset?</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button type="submit" class="btn btn-submitc">???</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <p>This does magic</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <input id="input1" type="text" class="form-control" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input2" type="text" class="form-control" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input3" type="text" class="form-control" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input4" type="text" class="form-control" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input5" type="text" class="form-control" placeholder="Enter a number" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="row"><p id="smallOutput"></p></div>
-                                    <div class="row"><p id="bigOutput"></p></div>
-                                    <div class="row"><p id="avgOutput"></p></div>
-                                    <div class="row"><p id="sumOutput"></p></div>
-                                    <div class="row"><p id="prodOutput"></p></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 text-center">
-                                    <button id="doMath" type="submit" class="btn btn-submitc">Do Math</button>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <button type="submit" class="btn btn-submitc">Reset?</button>
-                                </div>
-                                <div class="col-md-4 text-center">
-                                    <button type="submit" class="btn btn-submitc">???</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-footer" style="padding: 0px; border-top: 0px">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="myModal2" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+    </div>
+    <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title text-center">ARITHMETIC</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="background: #333">
+                    <h2 class="modal-title text-center" style="color: #FFD34E">Factorial</h2>
+                </div>
+                <div class="modal-body" style="background:#F8F8F8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>This does magic</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="inputFact" type="text" class="form-control" placeholder="Enter a number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row" style="border: 1px solid transparent; padding: 5px 0px 0px 20px"><p id="factOutput"></p></div>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px solid #e5e5e5; padding-top: 10px">
+                            <div class="col-md-4 text-center">
+                                <button id="doMathFact" type="submit" class="btn btn-submitc">Do Math</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button type="submit" class="btn btn-submitc">Reset?</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button type="submit" class="btn btn-submitc">???</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <p>This does magic</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    test
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button id="doMath" type="submit">Do Math</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Reset</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-footer" style="padding: 0px; border-top: 0px">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="myModal3" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+    </div>
+    <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title text-center">ARITHMETIC</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">ARITHMETIC</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>This does magic</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button id="doMath" type="submit">Do Math</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Reset</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Code</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <p>This does magic</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    test
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button id="doMath" type="submit">Do Math</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Reset</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="myModal4" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+    </div>
+    <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title text-center">ARITHMETIC</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">ARITHMETIC</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>This does magic</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button id="doMath" type="submit">Do Math</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Reset</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Code</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <p>This does magic</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    test
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button id="doMath" type="submit">Do Math</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Reset</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="myModal5" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+    </div>
+    <div id="myModal5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title text-center">ARITHMETIC</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">ARITHMETIC</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>This does magic</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button id="doMath" type="submit">Do Math</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Reset</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Code</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <p>This does magic</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    test
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button id="doMath" type="submit">Do Math</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Reset</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="myModal6" class="modal fade" role="dialog">
-            <div class="modal-dialog">
+    </div>
+    <div id="myModal6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title text-center">ARITHMETIC</h4>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">ARITHMETIC</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p>This does magic</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                                <div class="row">
+                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button id="doMath" type="submit">Do Math</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Reset</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="submit">Code</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <p>This does magic</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                    <div class="row">
-                                        <input id="input1" type="text" placeholder="Enter a number" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    test
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <button id="doMath" type="submit">Do Math</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Reset</button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button type="submit">Code</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     <!---->
     <section class="section-padding parallax bg-image-2 section wow fadeIn delay-08s" id="cta-2">
         <div class="container">
@@ -638,60 +624,6 @@
     <script src="/scripts/wow.js"></script>
     <script src="/scripts/custom.js"></script>
     <script src="/scripts/contactform.js"></script>
-    
-    <script>
-        function small(array) {
-            let x = array[0];
-            for (let y of array) {
-                if (y < x) {
-                    x = y;
-                };
-            };
-            return x;
-        };
-        function big(array) {
-            let x = array[0];
-            for (let y of array) {
-                if (y > x) {
-                    x = y;
-                };
-            };
-            return x;
-        };
-        function avg(array) {
-            let count = array.length;
-            let add = sum(array);
-            return add / count;
-        };
-        function sum(array) {
-            let x = 0;
-            for (let i of array) {
-                x += i;
-            };
-            return x;
-        };
-        function prod(array) {
-            let x = 1;
-            for (let i of array) {
-                x *= i;
-            };
-            return x;
-        };
-        $("#doMath").click(function () {
-            let numArray = [];
-
-            numArray[0] = Number($("#input1").val());
-            numArray[1] = Number($("#input2").val());
-            numArray[2] = Number($("#input3").val());
-            numArray[3] = Number($("#input4").val());
-            numArray[4] = Number($("#input5").val());
-
-            $("#smallOutput").text(`The smallest of your numbers is ${small(numArray)}.`);
-            $("#bigOutput").text(`The largest of your numbers is ${big(numArray)}.`);
-            $("#avgOutput").text(`The mean of your numbers is ${avg(numArray)}.`);
-            $("#sumOutput").text(`The sum of your numbers is ${sum(numArray)}.`);
-            $("#prodOutput").text(`The product of your numbers is ${prod(numArray)}.`);
-        });
-    </script>
+    <script src="scripts/myCustom.js"></script>
 </body>
 </html>
