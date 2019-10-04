@@ -1,0 +1,149 @@
+/*Modals*/
+
+#cc1 {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+#cc1:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+}
+#cc2 {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+#cc2:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+}
+#cc3 {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+#cc3:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+}
+#cc4 {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+#cc4:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+}
+#cc5 {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+#cc5:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+}
+#cc6 {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+}
+#cc6:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+}
+
+/*SNS*/
+
+.fa-linkedin {
+    font-size: 2em;
+}
+.fa-github {
+    font-size: 2em;
+}
+
+/*Projects*/
+
+#port01 {
+    cursor: pointer;
+}
+#port02 {
+    cursor: pointer;
+}
+#port03 {
+    cursor: pointer;
+}
+#port04 {
+    cursor: pointer;
+}
+#port05 {
+    cursor: pointer;
+}
+#port06 {
+    cursor: pointer;
+}
+
+/*Other*/
+
+.btn-submitc {
+    background: #FFD34E;
+    border: 0px;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    font-weight: normal;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin-top: 0px;
+    border: 2px solid #FFD34E;
+}
+.btn-submitc:hover {
+    background: #fff;
+}
+.btn-sendc {
+    border-radius: 2px;
+    color: #000;
+    background-color: #FFD34E;
+    margin-bottom: 10px;
+}
