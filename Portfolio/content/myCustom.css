@@ -1,5 +1,4 @@
 /*Modals*/
-
 #cc1 {
     border-color: transparent;
     border-style: solid;
@@ -8,25 +7,13 @@
     cursor: pointer;
     width: 50%;
 }
-#cc1:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-}
 #cc2 {
     border-color: transparent;
     border-style: solid;
     border-width: 3px;
     border-radius: 8px;
     cursor: pointer;
-    width: 50%;
-}
-#cc2:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
+    width: 50%
 }
 #cc3 {
     border-color: transparent;
@@ -34,13 +21,7 @@
     border-width: 3px;
     border-radius: 8px;
     cursor: pointer;
-    width: 50%;
-}
-#cc3:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
+    width: 50%
 }
 #cc4 {
     border-color: transparent;
@@ -48,13 +29,7 @@
     border-width: 3px;
     border-radius: 8px;
     cursor: pointer;
-    width: 50%;
-}
-#cc4:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
+    width: 50%
 }
 #cc5 {
     border-color: transparent;
@@ -62,13 +37,7 @@
     border-width: 3px;
     border-radius: 8px;
     cursor: pointer;
-    width: 50%;
-}
-#cc5:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
+    width: 50%
 }
 #cc6 {
     border-color: transparent;
@@ -76,13 +45,49 @@
     border-width: 3px;
     border-radius: 8px;
     cursor: pointer;
-    width: 50%;
+    width: 50%
+}
+#cc1:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
+}
+#cc2:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
+}
+#cc3:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
+}
+#cc4:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
+}
+#cc5:hover {
+    border-color: #FFD34E;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
 }
 #cc6:hover {
     border-color: #FFD34E;
     border-style: solid;
     border-width: 3px;
     border-radius: 8px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 /*SNS*/
@@ -98,21 +103,27 @@
 
 #port01 {
     cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
 }
 #port02 {
     cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
 }
 #port03 {
     cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
 }
 #port04 {
     cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
 }
 #port05 {
     cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
 }
 #port06 {
     cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
 }
 
 /*Other*/
@@ -133,7 +144,6 @@
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     margin-top: 0px;
     border: 2px solid #FFD34E;
@@ -146,4 +156,7 @@
     color: #000;
     background-color: #FFD34E;
     margin-bottom: 10px;
+}
+.xBtn {
+    transform: scale(1.5);
 }

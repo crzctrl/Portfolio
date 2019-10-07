@@ -45,11 +45,11 @@ $("#doMath").click(function () {
     numArray[3] = Number($("#input4").val());
     numArray[4] = Number($("#input5").val());
 
-    $("#smallOutput").text(`The smallest of your numbers is ${small(numArray)}.`);
-    $("#bigOutput").text(`The largest of your numbers is ${big(numArray)}.`);
-    $("#avgOutput").text(`The mean of your numbers is ${avg(numArray)}.`);
-    $("#sumOutput").text(`The sum of your numbers is ${sum(numArray)}.`);
-    $("#prodOutput").text(`The product of your numbers is ${prod(numArray)}.`);
+    $("#smallOutput").text(`The smallest of the numbers is ${small(numArray)}.`);
+    $("#bigOutput").text(`The largest of the numbers is ${big(numArray)}.`);
+    $("#avgOutput").text(`The mean of the numbers is ${avg(numArray)}.`);
+    $("#sumOutput").text(`The sum of the numbers is ${sum(numArray)}.`);
+    $("#prodOutput").text(`The product of the numbers is ${prod(numArray)}.`);
 });
 
 //Factorial
@@ -65,7 +65,12 @@ $("#doMathFact").click(function () {
         return factNum;
     };
 
-    $("#factOutput").text(`The factorial of your number is ${fact(factNum)}.`);
+    $("#factOutput").text(`The factorial of ${factNum} is ${fact(factNum)}.`);
 });
 
 //FizzBuzz
+
+numArray[0] = Number($("#input1").val());
+numArray[1] = Number($("#input2").val());
+
+for (let i = 1; i <= 100)
