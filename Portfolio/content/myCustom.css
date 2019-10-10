@@ -1,97 +1,38 @@
 /*Modals*/
-#cc1 {
+#cc1, #cc2, #cc3, #cc4, #cc5, #cc6 {
     border-color: transparent;
     border-style: solid;
     border-width: 3px;
     border-radius: 8px;
     cursor: pointer;
     width: 50%;
+    height: 166px;
 }
-#cc2 {
-    border-color: transparent;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%
-}
-#cc3 {
-    border-color: transparent;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%
-}
-#cc4 {
-    border-color: transparent;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%
-}
-#cc5 {
-    border-color: transparent;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%
-}
-#cc6 {
-    border-color: transparent;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 50%
-}
-#cc1:hover {
+#cc1:hover, #cc2:hover, #cc3:hover, #cc4:hover, #cc5:hover, #cc6:hover {
     border-color: #FFD34E;
     border-style: solid;
     border-width: 3px;
     border-radius: 8px;
     box-shadow: 10px 10px 5px grey;
 }
-#cc2:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 5px grey;
+.modal-header {
+    background: #333;
 }
-#cc3:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 5px grey;
+.modal-title {
+    color: #FFD34E;
 }
-#cc4:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
+.modal-body {
     border-radius: 8px;
-    box-shadow: 10px 10px 5px grey;
+    background: #F8F8F8;
 }
-#cc5:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
-    box-shadow: 10px 10px 5px grey;
-}
-#cc6:hover {
-    border-color: #FFD34E;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 8px;
+
+/*Portfolio*/
+#port01, #port02, #port03, #port04, #port05, #port06 {
+    cursor: pointer;
     box-shadow: 10px 10px 5px grey;
 }
 
-/*SNS*/
-
+/*Contacts*/
 .fa-linkedin {
     font-size: 2em;
 }
@@ -99,35 +40,7 @@
     font-size: 2em;
 }
 
-/*Projects*/
-
-#port01 {
-    cursor: pointer;
-    box-shadow: 10px 10px 5px grey;
-}
-#port02 {
-    cursor: pointer;
-    box-shadow: 10px 10px 5px grey;
-}
-#port03 {
-    cursor: pointer;
-    box-shadow: 10px 10px 5px grey;
-}
-#port04 {
-    cursor: pointer;
-    box-shadow: 10px 10px 5px grey;
-}
-#port05 {
-    cursor: pointer;
-    box-shadow: 10px 10px 5px grey;
-}
-#port06 {
-    cursor: pointer;
-    box-shadow: 10px 10px 5px grey;
-}
-
 /*Other*/
-
 .btn-submitc {
     background: #FFD34E;
     border: 0px;
@@ -147,6 +60,9 @@
     transition: all 0.4s ease-in-out;
     margin-top: 0px;
     border: 2px solid #FFD34E;
+    width: 160px;
+    text-align: center;
+    margin-bottom: 5px;
 }
 .btn-submitc:hover {
     background: #fff;
@@ -160,3 +76,8 @@
 .xBtn {
     transform: scale(1.5);
 }
+/*@media only screen and (max-width: 991px) {
+    #cc1, #cc2, #cc3, #cc4, #cc5, #cc6 {
+        width: 100%;
+    }
+}*/

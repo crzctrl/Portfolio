@@ -5,16 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>portefeuille de christopher</title>
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <meta name="author" content="Christopher Li">
+    <!--<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">-->
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="/content/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/content/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/content/animate.css">
     <link rel="stylesheet" type="text/css" href="/content/style.css">
+    <link href="/scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="/scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/content/myCustom.css">
 
     <!-- =======================================================
@@ -81,7 +84,7 @@
                     <div class="section-title">
                         <h2 class="head-title">Coding Challenges</h2>
                         <hr class="botm-line">
-                        <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                        <!--<p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>-->
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -91,7 +94,7 @@
                         </div>
                         <div class="icon-text">
                             <h3 class="txt-tl">Arithmetic</h3>
-                            <p class="txt-para">Mean, median, and mode...</p>
+                            <p class="txt-para">Addition, Subtraction, Multiplication, & Division</p>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRight delay-02s" data-toggle="modal" data-target="#myModal2" id="cc2">
@@ -109,7 +112,7 @@
                         </div>
                         <div class="icon-text">
                             <h3 class="txt-tl">FizzBuzz</h3>
-                            <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                            <p class="txt-para">Second only to coffee</p>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRight delay-04s" data-toggle="modal" data-target="#myModal4" id="cc4">
@@ -118,7 +121,7 @@
                         </div>
                         <div class="icon-text">
                             <h3 class="txt-tl">Palindrome</h3>
-                            <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                            <p class="txt-para">Doc, Note: I Dissent. A Fast Never Prevents A Fatness. I Diet On Cod</p>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRight delay-06s" data-toggle="modal" data-target="#myModal5" id="cc5">
@@ -127,7 +130,7 @@
                         </div>
                         <div class="icon-text">
                             <h3 class="txt-tl">High Coversion</h3>
-                            <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                            <!--<p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>-->
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInRight delay-06s" data-toggle="modal" data-target="#myModal6" id="cc6">
@@ -136,7 +139,7 @@
                         </div>
                         <div class="icon-text">
                             <h3 class="txt-tl">Save Tons of Time</h3>
-                            <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                            <!--<p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>-->
                         </div>
                     </div>
                 </div>
@@ -149,10 +152,10 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" style="background: #333">
-                    <h2 class="modal-title text-center" style="color: #FFD34E">ARITHMETIC</h2>
+                <div class="modal-header">
+                    <h2 class="modal-title text-center">ARITHMETIC</h2>
                 </div>
-                <div class="modal-body" style="background:#F8F8F8">
+                <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12 text-center">
@@ -190,10 +193,68 @@
                                 <button id="doMath" type="submit" class="btn btn-submitc">Do Math</button>
                             </div>
                             <div class="col-md-4 text-center">
-                                <button type="submit" class="btn btn-submitc">Reset?</button>
+                                <button id="resetMath" type="submit" class="btn btn-submitc">Reset?</button>
                             </div>
                             <div class="col-md-4 text-center">
-                                <button type="submit" class="btn btn-submitc">???</button>
+                                <button id="showMath" type="submit" class="btn btn-submitc">???</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="display: none" id="codeMath">
+                                <pre class="brush: js">
+                                    function small(array) {
+                                        var x = array[0];
+                                        for (var y of array) {
+                                            if (y < x) {
+                                                x = y;
+                                            };
+                                        };
+                                        return x;
+                                    };
+                                    function big(array) {
+                                        var x = array[0];
+                                        for (var y of array) {
+                                            if (y > x) {
+                                                x = y;
+                                            };
+                                        };
+                                        return x;
+                                    };
+                                    function avg(array) {
+                                        var count = array.length;
+                                        var add = sum(array);
+                                        return add / count;
+                                    };
+                                    function sum(array) {
+                                        var x = 0;
+                                        for (var i of array) {
+                                            x += i;
+                                        };
+                                        return x;
+                                    };
+                                    function prod(array) {
+                                        var x = 1;
+                                        for (var i of array) {
+                                            x *= i;
+                                        };
+                                        return x;
+                                    };
+                                    $("#doMath").click(function () {
+                                        var numArray = [];
+
+                                        numArray[0] = Number($("#input1").val());
+                                        numArray[1] = Number($("#input2").val());
+                                        numArray[2] = Number($("#input3").val());
+                                        numArray[3] = Number($("#input4").val());
+                                        numArray[4] = Number($("#input5").val());
+
+                                        $("#smallOutput").text(`The smallest of the numbers is ${small(numArray)}.`);
+                                        $("#bigOutput").text(`The largest of the numbers is ${big(numArray)}.`);
+                                        $("#avgOutput").text(`The mean of the numbers is ${avg(numArray)}.`);
+                                        $("#sumOutput").text(`The sum of the numbers is ${sum(numArray)}.`);
+                                        $("#prodOutput").text(`The product of the numbers is ${prod(numArray)}.`);
+                                    });
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -209,10 +270,10 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header" style="background: #333">
-                    <h2 class="modal-title text-center" style="color: #FFD34E">Factorial</h2>
+                <div class="modal-header">
+                    <h2 class="modal-title text-center">Factorial</h2>
                 </div>
-                <div class="modal-body" style="background:#F8F8F8">
+                <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12 text-center">
@@ -234,10 +295,30 @@
                                 <button id="doMathFact" type="submit" class="btn btn-submitc">Do Math</button>
                             </div>
                             <div class="col-md-4 text-center">
-                                <button type="submit" class="btn btn-submitc">Reset?</button>
+                                <button id="resetFact" type="submit" class="btn btn-submitc">Reset?</button>
                             </div>
                             <div class="col-md-4 text-center">
-                                <button type="submit" class="btn btn-submitc">???</button>
+                                <button id="showFact" type="submit" class="btn btn-submitc">???</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="display: none" id="codeFact">
+                                <pre class="brush: js">
+                                    $("#doMathFact").click(function () {
+                                        var factNum = Number($("#inputFact").val());
+
+                                        function fact(x) {
+                                            if (x === 1 || x === 0) {
+                                                return 1;
+                                            } for (let i = 2; i <= x - 1; i++) {
+                                                factNum *= i;
+                                            };
+                                            return factNum;
+                                        };
+
+                                        $("#factOutput").text(`The factorial of ${factNum} is ${fact(factNum)}.`);
+                                    });
+                                </pre>
                             </div>
                         </div>
                     </div>
@@ -254,8 +335,7 @@
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title text-center">ARITHMETIC</h4>
+                    <h2 class="modal-title text-center">FizzBuzz</h2>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
@@ -266,40 +346,59 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="inputFB1" type="text" class="form-control" placeholder="Enter a number" />
                                 </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                <div class="row" style="padding-bottom: 5px">
+                                    <input id="inputFB2" type="text" class="form-control" placeholder="Enter a number" />
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                test
+                                <div class="row" style="border: 1px solid transparent; padding: 5px 0px 0px 20px"><p id="outputFB"></p></div>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px solid #e5e5e5; padding-top: 10px">
+                            <div class="col-md-4 text-center">
+                                <button id="pop" type="submit" class="btn btn-submitc">Pop!</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button id="resetFB" type="submit" class="btn btn-submitc">Reset?</button>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <button id="showFB" type="submit" class="btn btn-submitc">???</button>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
-                                <button id="doMath" type="submit">Do Math</button>
-                            </div>
-                            <div class="col-md-4">
-                                <button type="submit">Reset</button>
-                            </div>
-                            <div class="col-md-4">
-                                <button type="submit">Code</button>
+                            <div class="col-md-12" style="display: none" id="codeFB">
+                                <pre class="brush: js">
+                                    $("#pop").click(function () {
+                                        let fb1 = Number($("#inputFB1").val());
+                                        let fb2 = Number($("#inputFB2").val());
+                                        let arrayFB = [];
+
+                                        function fizzbuzz(x, y) {
+                                            for (var i = 1; i <= 100; i++) {
+                                                if (i % x == 0 && i % y == 0) {
+                                                    arrayFB.push("FizzBuzz");
+                                                } else if (i % x == 0) {
+                                                    arrayFB.push("Fizz");
+                                                } else if (i % y == 0) {
+                                                    arrayFB.push("Buzz");
+                                                } else {
+                                                    arrayFB.push(i);
+                                                };
+                                            };
+                                            return arrayFB.join(", ")
+                                        };
+
+                                        $("#outputFB").text(`${fizzbuzz(fb1, fb2)}`);
+                                    });
+                                </pre>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-footer" style="padding: 0px; border-top: 0px">
+                        <button type="button" class="close xBtn" data-dismiss="modal">&times;</button>
                     </div>
                 </div>
             </div>
@@ -312,7 +411,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title text-center">ARITHMETIC</h4>
+                    <h4 class="modal-title text-center">Palindrome</h4>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
@@ -322,41 +421,49 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6" style="padding-bottom: 5px">
                                 <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
-                                </div>
-                                <div class="row">
-                                    <input id="input1" type="text" placeholder="Enter a number" />
+                                    <input id="inputPD" type="text" class="form-control" placeholder="Enter a number" />
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                test
+                                <div class="row" style="border: 1px solid transparent; padding: 5px 0px 0px 20px"><p id="outputPD"></p></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <button id="doMath" type="submit">Do Math</button>
+                        <div class="row" style="border-top: 1px solid #e5e5e5; padding-top: 10px">
+                            <div class="col-md-4 text-center">
+                                <button id="reverse" type="submit" class="btn btn-submitc">Reverse?</button>
                             </div>
-                            <div class="col-md-4">
-                                <button type="submit">Reset</button>
+                            <div class="col-md-4 text-center">
+                                <button id="resetPD" type="submit" class="btn btn-submitc">Reset?</button>
                             </div>
-                            <div class="col-md-4">
-                                <button type="submit">Code</button>
+                            <div class="col-md-4 text-center">
+                                <button id="showPD" type="submit" class="btn btn-submitc">???</button>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="display: none" id="codePD">
+                                    <pre class="brush: js">
+                                        $("#reverse").click(function () {
+                                            var word1 = $("#inputPD").val();
+                                            var word2 = "";
+
+                                            function reverse(x) {
+                                                for (var i = x.length - 1; i >= 0; i--) {
+                                                    word2 += x[i];
+                                                };
+                                                return word2;
+                                            };
+
+                                            reverse(word1);
+                                            word1 == word2 ? $("#outputPD").text(`SUCCESS! ${word1} reversed is: ${word2}`) : $("#outputPD").text(`UH-OH! ${word1} reversed is: ${word2}`);
+                                        });
+                                    </pre>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-footer" style="padding: 0px; border-top: 0px">
+                        <button type="button" class="close xBtn" data-dismiss="modal">&times;</button>
                     </div>
                 </div>
             </div>
@@ -482,8 +589,8 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="cta-txt">
-                        <h3>Subscribe For Updates</h3>
-                        <p>Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
+                        <!--<h3>Subscribe For Updates</h3>
+                        <p>Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>-->
                     </div>
                 </div>
             </div>
@@ -498,7 +605,7 @@
                     <div class="section-title">
                         <h2 class="head-title">Portfolio</h2>
                         <hr class="botm-line">
-                        <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                        <!--<p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>-->
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">
@@ -545,7 +652,7 @@
                     <div class="section-title">
                         <h2 class="head-title black">Contact</h2>
                         <hr class="botm-line">
-                        <p class="sec-para black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                        <!--<p class="sec-para black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>-->
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12">
@@ -625,6 +732,12 @@
     <script src="/scripts/wow.js"></script>
     <script src="/scripts/custom.js"></script>
     <script src="/scripts/contactform.js"></script>
-    <script src="scripts/myCustom.js"></script>
+    <script src="/scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="/scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script src="/scripts/myCustom.js"></script>
+
+    <script>
+        SyntaxHighlighter.all();
+    </script>
 </body>
 </html>

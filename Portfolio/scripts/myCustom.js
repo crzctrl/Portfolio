@@ -1,3 +1,10 @@
+//???
+$("#input1, #input2, #input3, #input4, #input5, #inputFact, #inputFB1, #inputFB2").keypress(function (abc) {
+    if (!(abc.keyCode >= 48 && abc.keyCode <= 57) || (abc.keyCode >= 96 && abc.keyCode <= 105)) {
+        return false;
+    };
+});
+
 //Arithmetic
 function small(array) {
     let x = array[0];
@@ -51,6 +58,13 @@ $("#doMath").click(function () {
     $("#sumOutput").text(`The sum of the numbers is ${sum(numArray)}.`);
     $("#prodOutput").text(`The product of the numbers is ${prod(numArray)}.`);
 });
+$("#resetMath").click(function () {
+    $("#input1, #input2, #input3, #input4, #input5").val("");
+    $("#smallOutput, #bigOutput, #avgOutput, #sumOutput, #prodOutput").text("");
+});
+$("#showMath").click(function () {
+    $("#codeMath").toggle();
+});
 
 //Factorial
 $("#doMathFact").click(function () {
@@ -67,10 +81,63 @@ $("#doMathFact").click(function () {
 
     $("#factOutput").text(`The factorial of ${factNum} is ${fact(factNum)}.`);
 });
+$("#resetFact").click(function () {
+    $("#inputFact").val("");
+    $("#factOutput").text("");
+});
+$("#showFact").click(function () {
+    $("#codeFact").toggle();
+})
 
 //FizzBuzz
+$("#pop").click(function () {
+    let fb1 = Number($("#inputFB1").val());
+    let fb2 = Number($("#inputFB2").val());
+    let arrayFB = [];
 
-numArray[0] = Number($("#input1").val());
-numArray[1] = Number($("#input2").val());
+    function fizzbuzz(x, y) {
+        for (let i = 1; i <= 100; i++) {
+            if (i % x == 0 && i % y == 0) {
+                arrayFB.push("FizzBuzz");
+            } else if (i % x == 0) {
+                arrayFB.push("Fizz");
+            } else if (i % y == 0) {
+                arrayFB.push("Buzz");
+            } else {
+                arrayFB.push(i);
+            };
+        };
+        return arrayFB.join(`, `)
+    };
 
-for (let i = 1; i <= 100)
+    $("#outputFB").text(`${fizzbuzz(fb1, fb2)}`);
+});
+$("#resetFB").click(function () {
+    $("#inputFB1, #inputFB2").val("");
+    $("#outputFB").text("");
+});
+$("#showFB").click(function () {
+    $("#codeFB").toggle();
+});
+
+////Palindrome
+$("#reverse").click(function () {
+    let word1 = $("#inputPD").attr("checked", true).val().toLowerCase();
+    let word2 = "";
+
+    function reverse(x) {
+        for (let i = x.length - 1; i >= 0; i--) {
+            word2 += x[i];
+        };
+        return word2;
+    };
+    reverse(word1);
+    word1 == word2 ? $("#outputPD").text(`SUCCESS! ${word1} reversed is: ${word2}`) : $("#outputPD").text(`UH-OH! ${word1} reversed is: ${word2}`);
+});
+    $("#resetPD").click(function () {
+        $("#inputPD").val("");
+        $("#outputPD").text("");
+    });
+    $("#showPD").click(function () {
+        $("#codePD").toggle();
+    });
