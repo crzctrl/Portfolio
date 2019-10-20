@@ -120,9 +120,9 @@ $("#showFB").click(function () {
     $("#codeFB").toggle();
 });
 
-////Palindrome
+//Palindrome
 $("#reverse").click(function () {
-    let word1 = $("#inputPD").attr("checked", true).val().toLowerCase();
+    let word1 = $("#inputPD").attr("checked", true).val();
     let word2 = "";
 
     function reverse(x) {
@@ -131,8 +131,11 @@ $("#reverse").click(function () {
         };
         return word2;
     };
-    reverse(word1);
-    word1 == word2 ? $("#outputPD").text(`SUCCESS! ${word1} reversed is: ${word2}`) : $("#outputPD").text(`UH-OH! ${word1} reversed is: ${word2}`);
+
+    reverse(word1)
+    let pword1 = word1.toLowerCase().replace(/[^\w]|_/g, "");
+    let pword2 = word2.toLowerCase().replace(/[^\w]|_/g, "");
+    pword1 == pword2 ? $("#outputPD").text(`SUCCESS! ${word1} reversed is: ${word2}`) : $("#outputPD").text(`UH-OH! ${word1} reversed is: ${word2}`);
 });
     $("#resetPD").click(function () {
         $("#inputPD").val("");
