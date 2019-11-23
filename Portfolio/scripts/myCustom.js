@@ -144,3 +144,43 @@ $("#reverse").click(function () {
     $("#showPD").click(function () {
         $("#codePD").toggle();
     });
+
+//smtp
+
+//$(document).ready(function () {
+//    $("#submit").click(function (event) {
+//        event.preventDefault();
+//        console.log("yo");
+
+//        //let name = $("#name").val();
+//        //let email = $("#email").val();
+//        //let subject = $("#subject").val();
+//        //let message = $("#message").val();
+//    });
+//});
+
+//let name = document.getElementById("name").value;
+//let email = document.getElementById("email").value;
+//let subject = document.getElementById("subject").value;
+//let message = document.getElementById("message").value;
+
+function sendSMTP() {
+    let name = $("#name").attr("checked", true).val();
+    let email = $("#email").attr("checked", true).val();
+    let subject = $("#subject").attr("checked", true).val();
+    let message = $("#message").attr("checked", true).val();
+
+    if (name.length >= 1 && name.length < 50 && email.includes("@") && subject.length >= 1 && subject.length < 50 && message.length >= 1 && message.length < 500) {
+        $("#coinflip").html("<div>Your message has been sent. Thank you!</div>")
+
+        Email.send({
+            SecureToken: "529772b2-1c6c-4e98-8a0d-9cec5cc47592",
+            To: "RealChill104@Yahoo.com",
+            From: `${email}`,
+            Subject: `${subject}`,
+            Body: `${name} said:<br /><br />${message}<br /><br />Sent from le portfolio de christopher`
+        });
+    } else {
+        $("#coinflip").html(`<div style="color: red">Something went wrong...</div>`)
+    }
+};

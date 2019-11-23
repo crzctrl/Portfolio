@@ -30,6 +30,12 @@
 #port01, #port02, #port03, #port04, #port05, #port06 {
     cursor: pointer;
     box-shadow: 10px 10px 5px grey;
+    filter: blur(8px)
+}
+#port01:hover, #port02:hover, #port03:hover, #port04:hover, #port05:hover, #port06:hover {
+    cursor: pointer;
+    filter: blur(0px)
+    /*box-shadow: none*/
 }
 
 /*Contacts*/

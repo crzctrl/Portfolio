@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>portefeuille de christopher</title>
+    <title>le portfolio de christopher</title>
     <meta name="author" content="Christopher Li">
     <!--<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">-->
@@ -40,13 +40,13 @@
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
                                 <span class="fa fa-bars"></span>
                             </button>
-                            <a href="index.html" class="navbar-brand" style="font-size: 2vw; text-shadow: 2px 2px 4px #000000;">portefeuille de christopher</a>
+                            <a href="index.html" class="navbar-brand" style="font-size: 2vw; text-shadow: 2px 2px 4px #000000;">le portfolio de christopher</a>
                         </div>
                         <div class="collapse navbar-collapse navbar-right" id="mynavbar">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#header" style="text-shadow: 2px 2px 4px #000000">Home</a></li>
                                 <li><a href="#feature" style="text-shadow: 2px 2px 4px #000000">Portfolio</a></li>
-                                <li><a href="#portfolio" style="text-shadow: 2px 2px 4px #000000">Coding Challenges</a></li>                                
+                                <li><a href="#portfolio" style="text-shadow: 2px 2px 4px #000000">Coding Challenges</a></li>
                                 <li><a href="#contact" style="text-shadow: 2px 2px 4px #000000">Contact</a></li>
                             </ul>
                         </div>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6 padding-right-zero">
                         <div class="portfolio-box design">
-                            <img src="/images/port02.jpg" alt="" class="img-responsive" id="port02">
+                            <a href="https://christopherlibugtracker.azurewebsites.net/" target="_blank"><img src="/images/Venus Flytrap.jpg" alt="" class="img-responsive" id="port02"></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 padding-right-zero">
@@ -206,8 +206,7 @@
             </div>
         </div>
     </section>
-    <section>
-    <!--Modals-->
+    <!-- #region Modals -->
     <div id="myModal1" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -532,8 +531,7 @@
             </div>
         </div>
     </div>
-    </section>
-    <!---->
+    <!-- #endregion -->
     <!--Contact-->
     <section class="section-padding wow fadeInUp delay-05s" id="contact">
         <div class="container">
@@ -547,12 +545,14 @@
                 </div>
                 <div class="col-md-12 col-sm-12">
                     <div class="col-md-4 col-sm-6" style="padding-left:0px;">
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
+                        <!--<div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage">Something went wrong...</div>-->
+                        <div id="coinflip"></div>
+                        <br />
                         <div class="contact-info">
                             <form action="" method="post" role="form" class="contactForm">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:1" data-msg="Please enter at least 1 chars" />
                                     <div class="validation"></div>
                                 </div>
                                 <div class="form-group">
@@ -561,15 +561,15 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:1" data-msg="Please enter at least 1 chars of subject" />
                                     <div class="validation"></div>
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something" placeholder="Message"></textarea>
                                     <div class="validation"></div>
                                 </div>
-                                <button type="submit" class="btn btn-sendc">Send</button>
+                                <button type="submit" class="btn btn-sendc" onclick="sendSMTP()">Send</button>
                             </form>
                         </div>
 
@@ -578,7 +578,7 @@
                         <div class="location-info">
                             <!--<p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Via Principe Amedeo 9, Torino, Italy</p>-->
                             <p class="white"><span aria-hidden="true" class="fa fa-phone"></span>Phone: (336) 686-5982</p>
-                            <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Email: <a href="" class="link-dec">ItsMeChrisLi@Gmail.com</a></p>
+                            <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Email: <a href="mailto:ItsMeChrisLi@Gmail.com" class="link-dec">ItsMeChrisLi@Gmail.com</a></p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -625,6 +625,7 @@
     <script src="/scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="/scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
     <script src="/scripts/myCustom.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
         SyntaxHighlighter.all();

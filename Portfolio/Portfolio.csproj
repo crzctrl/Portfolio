@@ -83,11 +83,11 @@
     <Content Include="images\favicon-32x32.png" />
     <Content Include="images\favicon.ico" />
     <Content Include="images\port01.jpg" />
-    <Content Include="images\port02.jpg" />
     <Content Include="images\port03.jpg" />
     <Content Include="images\port04.jpg" />
     <Content Include="images\port05.jpg" />
     <Content Include="images\port06.jpg" />
+    <Content Include="images\Venus Flytrap.jpg" />
     <Content Include="index.html" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\contactform.js" />
