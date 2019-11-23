@@ -176,9 +176,9 @@ function sendSMTP() {
         Email.send({
             SecureToken: "529772b2-1c6c-4e98-8a0d-9cec5cc47592",
             To: "RealChill104@Yahoo.com",
-            From: `${email}`,
+            From: "RealChill104@yahoo.com",
             Subject: `${subject}`,
-            Body: `${name} said:<br /><br />${message}<br /><br />Sent from le portfolio de christopher`
+            Body: `${name} &lt;${email}&gt; said:<br /><br />${message}<br /><br />Sent from le portfolio de christopher`
         });
     } else {
         $("#coinflip").html(`<div style="color: red">Something went wrong...</div>`)
