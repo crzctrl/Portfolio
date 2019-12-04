@@ -165,10 +165,10 @@ $("#reverse").click(function () {
 //let message = document.getElementById("message").value;
 
 function sendSMTP() {
-    let name = $("#name").attr("checked", true).val();
-    let email = $("#email").attr("checked", true).val();
-    let subject = $("#subject").attr("checked", true).val();
-    let message = $("#message").attr("checked", true).val();
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let subject = $("#subject").val();
+    let message = $("#message").val();
 
     if (name.length >= 1 && name.length < 50 && email.includes("@") && subject.length >= 1 && subject.length < 50 && message.length >= 1 && message.length < 500) {
         $("#coinflip").html("<div>Your message has been sent. Thank you!</div>")
@@ -176,7 +176,7 @@ function sendSMTP() {
         Email.send({
             SecureToken: "529772b2-1c6c-4e98-8a0d-9cec5cc47592",
             To: "RealChill104@Yahoo.com",
-            From: "RealChill104@yahoo.com",
+            From: `${email} <RealChill104@yahoo.com>`,
             Subject: `${subject}`,
             Body: `${name} &lt;${email}&gt; said:<br /><br />${message}<br /><br />Sent from le portfolio de christopher`
         });
