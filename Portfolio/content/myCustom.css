@@ -27,15 +27,33 @@
 }
 
 /*Portfolio*/
-#port01, #port02, #port03, #port04, #port05, #port06 {
+/*#port01, #port02, #port03, #port04, #port05, #port06, {
+    cursor: pointer;
+    box-shadow: 10px 10px 5px grey;
+    filter: blur(8px)
+}*/
+/*#port01:hover, #port02:hover, #port03:hover, #port04:hover, #port05:hover, #port06:hover {
+    cursor: pointer;
+    filter: blur(0px)
+    box-shadow: none
+}*/
+#p1, #p2, #p3, #p4, #p5, #p6 {
     cursor: pointer;
     box-shadow: 10px 10px 5px grey;
     filter: blur(8px)
 }
-#port01:hover, #port02:hover, #port03:hover, #port04:hover/*, #port05:hover, #port06:hover*/ {
+#p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover, #p6:hover {
     cursor: pointer;
     filter: blur(0px)
-    /*box-shadow: none*/
+}
+.bottom-right1, .bottom-right2, .bottom-right3, .bottom-right4, .bottom-right5, .bottom-right6 {
+    position: absolute;
+    bottom: 0px;
+    right: 4px;
+    font-family: Forte, 'Lato', sans-serif;
+}
+#ap3, #ap3:hover {
+    color: black;
 }
 
 /*Contacts*/
@@ -82,11 +100,3 @@
 .xBtn {
     transform: scale(1.5);
 }
-/*@media only screen and (max-width: 991px) {
-    #cc1, #cc2, #cc3, #cc4, #cc5, #cc6 {
-        width: 100%;
-    }
-    #cc1:hover, #cc2:hover, #cc3:hover, #cc4:hover, #cc5:hover, #cc6:hover {
-
-    }
-}*/
